@@ -86,13 +86,14 @@ print(message)
 
 # Final project (Tip Caclulator)
 
-print("Welcome to the tip calculator ")
-total_bill = float(input("What is the total bill "))
+print("Welcome to the tip calculator")
+total_bill = float(input("What is the total bill $ "))
 tip_percentage = float(input("What percentage would like to give "))
-user_name = int(input("How manay user can split the money"))
-bill_tip = tip_percentage / 100 * total_bill + total_bill
-bill_per_person = total_bill / user_name
-final_amount  = round(bill_per_person)
+user_name = int(input("How many user should split the money"))
+total_bill = tip_percentage / 100
+total_Amount = tip_percentage * total_bill + total_bill
+bill_per_person = total_Amount  / user_name
+final_amount = round(bill_per_person)
 print(f"Each person should payed {final_amount}")
 
 
