@@ -63,7 +63,7 @@ else:
 
 
 # BMI Calculator Exercise using the condional statement if / eslif else
-
+'''
 height = float(input("Enter your body height m "))
 weight = float(input("What is your body weight "))
 BMI = (weight / height + height)
@@ -83,4 +83,22 @@ elif BMI < 35:
     print(f"your bmi is {BMI} and your are Obese")
 
 else:
-    print(f"Your bmi is {BMI} and you are clinically Obese")
+    print(f"Your bmi is {BMI} and you are clinically.")
+'''
+
+
+
+# Leap Year Excercise using the  if else
+'''
+year = int(input("Enter your year you want "))
+
+if year % 4 == 0:
+    print("Leap year")
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year")
+else:
+    print("Not a leap year")
+'''   
+
+
