@@ -13,7 +13,7 @@ else:
 
 
 # rollercoaster  rider  >= greater or equal to operator
-'''
+"""
 hieght = int(input("what is your hieght in cm "))
 
 if hieght >= 120:
@@ -28,6 +28,8 @@ if hieght >= 120:
     elif age <= 18:
         bill = 7
         print("Youth ticket are $7")
+    elif age >= 45 and age <= 55:
+        print("Everything is ok have a free ride on us")
 
     else:
         bill = 12
@@ -44,8 +46,8 @@ if hieght >= 120:
 
 else:
     print("Sorry, yo hsve to grow taller before you can ride rollercoster")
-'''
 
+"""
 
 
 # play groud != less than or equal to operator
@@ -75,7 +77,7 @@ else:
 
 
 # BMI Calculator Exercise using the condional statement if / eslif else
-'''
+"""
 height = float(input("Enter your body height m "))
 weight = float(input("What is your body weight "))
 BMI = (weight / height + height)
@@ -96,11 +98,11 @@ elif BMI < 35:
 
 else:
     print(f"Your bmi is {BMI} and you are clinically.")
-'''
+"""
 
 
 # Leap Year Excercise using the  if else
-'''
+"""
 year = int(input("Enter your year you want "))
 
 if year % 4 == 0:
@@ -110,10 +112,10 @@ if year % 4 == 0:
             print("Leap year")
 else:
     print("Not a leap year")
-'''   
+"""
 
-
-# Program for my PIzza Cafe 
+# Program for my PIzza Cafe
+"""
 
 print("Welcome to the  pizza Diliveries ")
 
@@ -123,10 +125,36 @@ add_pepperoni = input("Do you have pepperoni? Y or N ")
 
 extra_cheese = input("Do you want a extra chase? Y or N")
 
+bill = 0
+if size == "S":
+    bill += 15
+
+elif size == "M":
+    bill += 20
+
+else:
+    bill += 25
 
 
+if add_pepperoni == "Y":
+    bill += 2
+
+else:
+    bill += 2
+
+if extra_cheese == "Y":
+    bill +=1
+
+print(f"Your final bill is {bill}")
+"""
 
 
-# import urllib.request
+# Trusure game
+print("Welcome to the game of my life ")
+direction = input("which way do you want to go right or left\n")
 
-# webUrl = urllib.request.urlopen("https://www.javatpoint.com/python-tutorial")
+if direction == "right":
+    print("Game over")
+
+elif direction == "left":
+    action = input("do you want to go swim or wait ")
