@@ -200,27 +200,30 @@ print(f"{line1} \n{line2}\n{line3}")
 # Rock paper game  
 game_image = ["rock", "Paper", "scisssor"]
 user_choice = int(input("what are you going to types 0 for Rock, 1 for, paper or 2 for Scissors.\n"))
-if 0 <=user_choice < len(game_image):
+if 0 <= user_choice <len(game_image):
     print(game_image[user_choice])
 
-computer = random.randint(0,2) 
-print("Computer choice 1")
-print(game_image[computer])
+computer_choice = random.randint(0,2)
+print("Computer Choice")
+print(game_image[computer_choice])
 
-if user_choice >=3 or computer < 0:
-    print("wong number")
+if user_choice >=3 or computer_choice < 0:
+    print("wrong number ")
 
-elif computer == 0  and user_choice == 2:
+elif computer_choice == 0 and user_choice ==2:
     print("You have won")
 
-elif computer > user_choice: 
-    print("You lose")
+elif computer_choice > user_choice:
+    print("You have lose")
 
-elif user_choice > computer:
-    print("you won")
+elif user_choice > computer_choice:
+    print("You have won")
 
-elif computer == user_choice:
-    print("It   is a draw")
+elif user_choice == computer_choice:
+    print("It is a draw")
+
+
+ 
 
 
 
@@ -228,10 +231,6 @@ elif computer == user_choice:
 
 
 
- 
-
-
-
 
 
 
@@ -241,3 +240,4 @@ elif computer == user_choice:
 
 
  
+
