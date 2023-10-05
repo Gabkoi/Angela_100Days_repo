@@ -157,13 +157,13 @@ if direction == "right":
     print("Game over")
 
 elif direction == "left":
-    action = input("do you want to go swim or wait ")
+    action = input("do you want to go swim or wait \n")
 
     if action == "swim":
         print("Game over")
 
     elif action == "wait":
-        final = input("which door do you want to used ")
+        final = input("which door do you want to used \n ")
 
         if final == "blue":
             print("Game Over")
@@ -173,8 +173,6 @@ elif direction == "left":
 
         elif final == "Yellow":
             print("you have won the game")
-
-
 
 
 
